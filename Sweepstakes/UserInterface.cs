@@ -19,5 +19,12 @@ namespace Sweepstakes
             string input = Console.ReadLine();
             return input;
         }
+        public static string GetManagerType()
+        {
+            Console.WriteLine("What type of sweepstakes manager would you like to use? stack or queue");
+            string answer = Console.ReadLine();
+            return answer;
+        }
+
     }
 }
