@@ -10,8 +10,12 @@ namespace Sweepstakes
     {
         static void Main(string[] args)
         {
+            Contestant contestantOne = new Contestant();
+            Contestant contestantTwo = new Contestant();
+            Contestant contestantThree = new Contestant();
             Simulation simulation = new Simulation();
-            simulation.RunSimulation();
+            simulation.CreateMarketingFirmWithManager();
+            Sweepstakes.RegisterContestant(contestantOne);
             Console.ReadLine();
 
         }

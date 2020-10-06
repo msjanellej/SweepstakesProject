@@ -36,14 +36,10 @@ namespace Sweepstakes
                     break;
                 default:
                     Console.WriteLine("That is not a valid choice");
-                     ManagerFactory(managerType);
+                    ManagerFactory(UserInterface.GetManagerType());
                     break;
             }
             return sweepstakesType;
-        }
-        public void RunSimulation()
-        {
-            CreateMarketingFirmWithManager();
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Sweepstakes
        
         public void RegisterContestant(Contestant contestant)
         {
-            contestants.Add(contestants.Count, contestant); //the int here is the key and it must start at zero and increase by 1 every time...
+            contestants.Add(contestants.Count, contestant);
         }
         public Contestant PickWinner() 
         {

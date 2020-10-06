@@ -25,6 +25,13 @@ namespace Sweepstakes
             string answer = Console.ReadLine();
             return answer;
         }
+        public static string GetSweepstakesName()
+        {
+            Console.WriteLine("What would you like to call your new sweepstakes?");
+            string name = Console.ReadLine();
+            return name;
+
+        }
 
     }
 }
