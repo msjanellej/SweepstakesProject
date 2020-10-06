@@ -38,13 +38,13 @@ namespace Sweepstakes
        
         public void RegisterContestant(Contestant contestant)
         {
-            contestants.Add(contestant.registrationNumber, contestant);
+            contestants.Add(contestants.Count, contestant); //the int here is the key and it must start at zero and increase by 1 every time...
         }
         public Contestant PickWinner() 
         {
             Contestant winner;
             Random rand  = new Random();
-            int winningIntegar = rand.Next(contestants.Count());
+            int winningIntegar = rand.Next(contestants.Count);
             winner = contestants[winningIntegar];            
             return winner;
         }

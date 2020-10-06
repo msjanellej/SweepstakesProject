@@ -14,17 +14,19 @@ namespace Sweepstakes
         //Constructor
         public SweepstakesStackManager()
         {
-
+            stack = new Stack<Sweepstakes>();
         }
         //membermethods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
+            //push
         {
-
+            stack.Push(sweepstakes);
         }
 
         public void GetSweepstakes()
+            //pop
         {
-
+            stack.Pop();
         }
     }
 }
