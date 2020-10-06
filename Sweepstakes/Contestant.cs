@@ -9,19 +9,20 @@ namespace Sweepstakes
     class Contestant
     {
         //member variables
-        string firstName;
-        string lastName;
-        string emailAddress;
-        string registrationNumber;
+        public string firstName;
+        public string lastName;
+        public string emailAddress;
+        public int registrationNumber;
 
 
         //constructor
-        public Contestant(string firstName, string lastName, string emailAddress, string registrationNumber)
+        public Contestant()
         {
-            this.firstName = firstName; //like this
-            this.lastName = lastName;
-            this.emailAddress = emailAddress;
-            this.registrationNumber = registrationNumber;
+            firstName = UserInterface.GetUserInputFor("firstName");
+            lastName = UserInterface.GetUserInputFor("lastName");
+            emailAddress = UserInterface.GetUserInputFor("emailAddress");
+            Random rand = new Random();
+            registrationNumber = rand.Next(1,50);
 
         }
 

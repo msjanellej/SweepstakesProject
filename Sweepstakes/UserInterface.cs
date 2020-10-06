@@ -15,7 +15,9 @@ namespace Sweepstakes
         //member methods
        public static string GetUserInputFor(string prompt)
         {
-            return null;
+            Console.WriteLine("Please enter your " + prompt);
+            string input = Console.ReadLine();
+            return input;
         }
     }
 }
