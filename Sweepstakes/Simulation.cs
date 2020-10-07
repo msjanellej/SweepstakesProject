@@ -9,20 +9,13 @@ namespace Sweepstakes
 {
     class Simulation
     {
-        // member variables
-
-
-        // constructor
         public Simulation()
         {
 
         }
-
-        //member methods
         public MarketingFirm CreateMarketingFirmWithManager()
         {
             MarketingFirm firm = new MarketingFirm(ManagerFactory(UserInterface.GetManagerType()));
-            //firm.CreateSweepstakes();
             return firm;
         }
         public static ISweepstakesManager ManagerFactory(string managerType)

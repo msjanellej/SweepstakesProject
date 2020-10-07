@@ -24,7 +24,7 @@ namespace Sweepstakes
             using (var client = new SmtpClient())
             {
                 client.Connect ("smtp.gmail.com", 587, false);
-                //I didn't add the authenticate because I didn't want to add my 
+                //I didn't add the authenticate because I didn't want to add my password, and I don't have another to use
                 client.Send(message);
                 client.Disconnect(true);
 

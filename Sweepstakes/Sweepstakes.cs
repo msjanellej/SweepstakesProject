@@ -51,10 +51,9 @@ namespace Sweepstakes
         }
         public void NotifyAllContestants(Contestant winner)
         {
-            foreach  (KeyValuePair<int, Contestant> contestant in contestants )
+            foreach  (KeyValuePair<int, Contestant> contestant in contestants)
             {
                 contestant.Value.Notify(winner);
-
             }
         }
     }
