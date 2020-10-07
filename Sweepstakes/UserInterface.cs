@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     static class UserInterface
     {
-       public static string GetUserInputFor(string prompt)
+       public static string GetContestantInfo(string prompt)
         {
             Console.WriteLine("Please enter your " + prompt);
             string input = Console.ReadLine();

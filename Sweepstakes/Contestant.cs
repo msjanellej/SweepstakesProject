@@ -15,9 +15,9 @@ namespace Sweepstakes
         public bool isWinner;
         public Contestant()
         {
-            firstName = UserInterface.GetUserInputFor("firstName");
-            lastName = UserInterface.GetUserInputFor("lastName");
-            emailAddress = UserInterface.GetUserInputFor("emailAddress");
+            firstName = UserInterface.GetContestantInfo("firstName");
+            lastName = UserInterface.GetContestantInfo("lastName");
+            emailAddress = UserInterface.GetContestantInfo("emailAddress");
             Random rand = new Random();
             registrationNumber = rand.Next(1, 50);
             isWinner = false;

@@ -49,7 +49,7 @@ namespace Sweepstakes
             Console.WriteLine("Email Address: " + contestant.emailAddress);
             Console.WriteLine("Registration Number: " + contestant.registrationNumber);
         }
-        public void WhoWon(Contestant winner)
+        public void NotifyAllContestants(Contestant winner)
         {
             foreach  (KeyValuePair<int, Contestant> contestant in contestants )
             {
