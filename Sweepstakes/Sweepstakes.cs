@@ -39,6 +39,7 @@ namespace Sweepstakes
             int winningIntegar = rand.Next(contestants.Count);
             winner = contestants[winningIntegar];
             winner.isWinner = true;
+            Email.SendEmail(winner);
             return winner;
         }
         public void PrintContestantInfo(Contestant contestant)
