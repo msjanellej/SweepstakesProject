@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Program
+    public interface INotifiable
     {
-        static void Main(string[] args)
-        {
-        }
-    }
+        void Notify(INotifiable notified);
+    }    
 }

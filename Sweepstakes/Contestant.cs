@@ -6,27 +6,33 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Contestant
+    public class Contestant : INotifiable
     {
-        //member variables
         public string firstName;
         public string lastName;
         public string emailAddress;
         public int registrationNumber;
-
-
-        //constructor
+        public bool isWinner;
         public Contestant()
         {
             firstName = UserInterface.GetUserInputFor("firstName");
             lastName = UserInterface.GetUserInputFor("lastName");
             emailAddress = UserInterface.GetUserInputFor("emailAddress");
             Random rand = new Random();
-            registrationNumber = rand.Next(1,50);
-
+            registrationNumber = rand.Next(1, 50);
+            isWinner = false;
         }
-
-
-        //member methods
+        public void Notify(INotifiable notified)
+        {
+            if (isWinner)
+            {
+                Console.WriteLine(firstName + ", Congratulations!! You have won!!");
+            }
+            else
+            {
+                Console.WriteLine(firstName + ", Better Luck Next Time!!");
+            }
+        }
+       
     }
 }

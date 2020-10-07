@@ -8,10 +8,7 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        // member variables
         ISweepstakesManager manager;
-
-        //constructor
         public MarketingFirm(ISweepstakesManager sweepstakesManager)
         {
             manager = sweepstakesManager; 
@@ -21,10 +18,6 @@ namespace Sweepstakes
         // the type of marketing manager they want to implement without having to write additional logic to support each one. It also works with
         // the open/closed principle of SOLID, because if additional sweepstakes managers are added in the future we won't have to rework logic in 
         // order to add a different type of data structure (ie: list, dictionary, etc).
-
-
-        //member methods
-     
         public void CreateSweepstakes()
         {
             Sweepstakes sweepstakes = new Sweepstakes(UserInterface.GetSweepstakesName());

@@ -19,9 +19,11 @@ namespace Sweepstakes
         }
 
         //member methods
-        public void CreateMarketingFirmWithManager()
+        public MarketingFirm CreateMarketingFirmWithManager()
         {
             MarketingFirm firm = new MarketingFirm(ManagerFactory(UserInterface.GetManagerType()));
+            //firm.CreateSweepstakes();
+            return firm;
         }
         public static ISweepstakesManager ManagerFactory(string managerType)
         {

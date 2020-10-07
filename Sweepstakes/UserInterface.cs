@@ -8,11 +8,6 @@ namespace Sweepstakes
 {
     static class UserInterface
     {
-        //member variables
-
-
-
-        //member methods
        public static string GetUserInputFor(string prompt)
         {
             Console.WriteLine("Please enter your " + prompt);
@@ -30,7 +25,6 @@ namespace Sweepstakes
             Console.WriteLine("What would you like to call your new sweepstakes?");
             string name = Console.ReadLine();
             return name;
-
         }
 
     }
